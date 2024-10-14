@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Love</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Georgia, garamond;
+            background-color: #004aad;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        /* Landing Page with Image Background */
+        .landing {
+            height: 100vh;
+            background: url('C:\Users\Genesis\Downloads\backgroundd.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            flex-direction: column;
+        }
+        .landing h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+        .landing p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+        .landing button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .landing button:hover {
+            background-color: #45a049;
+        }
+        .container {
+            width: 80%;
+            margin: 40px auto;
+        }
+        .section {
+            margin: 50px 0;
+       }
+        .photos img {
+            width: 500%;
+            max-width: 1000px;
+            margin: 50px;
+            border-radius: 40px;
+        }
+        .photos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        video {
+            display: block;
+            width: 500%;
+            max-width: 400px;
+            margin: 100px auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome, Love</h1>
+    </header>
+
+    <!-- Landing Page with Image Background -->
+    <section id="landing" class="landing">
+        <h1>Happy Birthday!</h1>
+                <button onclick="scrollToSection('photos')">Explore Now</button>
+    </section>
+
+    <!-- About You -->
+    <div id="photos" class="container section">
+        <h2>About You</h2>
+        <div class="photos">
+            <img src="C:\Users\Genesis\Downloads\infooo.jpg" alt="Photo 1">
+           
+	 </div>
+
+<!-- Photos -->
+    <div id="photos" class="container section">
+        <h2>Photos</h2>
+        <div class="photos">
+            <img src="C:\Users\Genesis\Downloads\photosss.jpg" alt="Photo 1">
+             </div>
+    
+    </div>
+
+    <!-- Video -->
+    <div id="videos" class="container section">
+        <h2>Video</h2>
+        <video controls>
+            <source src="C:\Users\Genesis\Downloads\1013.mp4">
+            </video>
+            
+    </div>
+
+    <!-- Message -->
+    <div id="about" class="container section">
+        <h2>Message</h2>
+        <img src="C:\Users\Genesis\Downloads\Messagggee.jpg" alt="Photo 1">
+
+   </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Happy Birthday, Love. I love you</p>
+    </footer>
+
+    <!-- Background Music -->
+    <audio autoplay loop controls>
+        <source src="C:\Users\Genesis\Downloads\blue - yung kai (Instrumental).mp3"  type="audio/mpeg">
+        </audio>
+
+    <script>
+        // JavaScript function to scroll to a specific section
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
